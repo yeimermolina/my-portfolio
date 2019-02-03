@@ -1,0 +1,42 @@
+.text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #ebed03;
+  font-weight: 600;
+}
+
+.Hero {
+  width: 100vw;
+  height: 100vh;
+  // background-color: #252934;
+  background-color: #1B242F;
+  // background-image: -webkit-linear-gradient(45deg, #021331 50%, #004E95 50%);
+  position: relative;
+}
+
+.Hero-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .text {
+    font-size: 3rem;
+  }
+}
+
+.Avatar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  // border-radius: 50%;
+}

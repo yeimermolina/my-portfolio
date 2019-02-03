@@ -1,0 +1,39 @@
+.Button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  transition: all .3s;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.view-more{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    transition: all .3s;
+    border: 2px solid white;
+    height: 50px;
+    .arrow {
+      margin-left: .5rem;
+      padding-top: 7px;
+      transition: all .3s;
+      svg {
+        fill: white;
+      }
+    }
+
+    &:hover {
+      background-color: #f74464;
+      border-color: transparent;
+      .arrow {
+        transition: all .3s;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
