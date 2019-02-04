@@ -20,7 +20,7 @@ const IndexPage = () => (
       </div>
       {/* <img className="Avatar" src={Avatar} alt='avatar'/> */}
     </div>
-    <section id="about">
+    <section id="about" name="about">
 
     </section>
   </Layout>

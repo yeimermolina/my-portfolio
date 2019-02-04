@@ -11,9 +11,9 @@
   top: -100px;
   right: 0;
   left: 0;
-  transition: all .9s;
+  transition: all .5s;
   background: rgba(27, 36, 47, 1);
-
+  position: fixed;
   &::before {
     position: absolute;
     content: "";
@@ -25,7 +25,7 @@
   }
 
   &.scrolled {
-    position: fixed;
+    transition: all .5s;
     top: 0;
     background: rgba(27, 36, 47, 1);
   }

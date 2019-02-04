@@ -1,3 +1,8 @@
+@keyframes example {
+  0%   {transform:translateX(3px)}
+  100% {transform:translateX(0)}
+}
+
 .Button {
   background-color: transparent;
   color: white;
@@ -8,7 +13,7 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  &.view-more{
+  &.view-more {
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
@@ -22,6 +27,7 @@
       margin-left: .5rem;
       padding-top: 7px;
       transition: all .3s;
+      animation: example .5s linear .4s infinite alternate;
       svg {
         fill: white;
       }
