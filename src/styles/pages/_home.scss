@@ -1,5 +1,5 @@
 @keyframes bounce {
-  0%   {transform:translateY(3px)}
+  0%   {transform:translateY(50%)}
   100% {transform:translateY(0)}
 }
 .text {
@@ -70,21 +70,41 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  padding: 0 0 4rem;
   .inner {
     max-width: 1300px;
     display: flex;
     justify-content: space-between;
   }
-  img {
-    max-width: 400px;
-    max-height: 400px;
-  }
 
-  .Technologies {
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+
+    .text {
+      margin: 1rem 0;
+      text-align: center;
+      max-width: 350px;
+      font-weight: 200;
+      
+    }
+
+    img {
+      max-width: 300px;
+      max-height: 300px;
+      margin: 0;
+      border-radius: 50%;
+      border: 5px solid $pink;
+    }
+  }
+  
+
+  .right-content {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
+    width: 60%;
     justify-content: space-evenly;
 
     .tech-item {
@@ -95,9 +115,45 @@
       color: white;
       font-weight: 200;
       font-family: 'Raleway', sans-serif;
+      transition: all .3s;
+      text-transform: uppercase;
+      width: 20%;
+      position: relative;
+      overflow: hidden;
+      .tech-name {
+        margin-top: 3rem;
+      }
+
+      .tech-icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s;
+      }
+
+      .tech-score {
+        position: absolute;
+        top: 0;
+        left: 200%;
+        transform: translateX(-50%);
+        transition: all .3s;
+      }
 
       &:hover .tech-icon {
-        animation: bounce .5s linear .4s infinite alternate;
+        left: -50%;
+        // animation: bounce .5s linear .4s infinite alternate;
+      }
+
+      &:hover .tech-score {
+        left: 50%;
+        color: $yellow;
+        font-weight: 600;
+      }
+
+      &:hover .tech-name {
+        color: $yellow;
+        font-weight: 600;
       }
     }
   }

@@ -26,19 +26,71 @@ const IndexPage = () => (
     <section id="about" name="about">
       <div className="SectionTitle">About</div>
       <div className="inner">
-        <img src={Avatar} alt="avatar"/>
-        <div className="Technologies">
+        <div className="left-content">
+          <img src={Avatar} alt="avatar"/>
+          <p className="text">I am Software Developer from Venezuela, but I am currently living in Colombia. I like learning about new technologies</p>
+        </div>
+        
+        <div className="right-content">
           <div className="tech-item">
             <span className="tech-icon"><ReactIcon /></span>
-            <span>React JS</span>
+            <span className="tech-name">React JS</span>
+            <span className="tech-score">87%</span>
           </div>
           <div className="tech-item">
             <span className="tech-icon"><JSIcon /></span>
-            <span>Javascript</span>
+            <span className="tech-name">Javascript</span>
+            <span className="tech-score">37%</span>
           </div>
           <div className="tech-item">
             <span className="tech-icon"><HTML5 /></span>
-            <span>HTML5</span>
+            <span className="tech-name">HTML5</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><ReactIcon /></span>
+            <span className="tech-name">React JS</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><JSIcon /></span>
+            <span className="tech-name">Javascript</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><HTML5 /></span>
+            <span className="tech-name">HTML5</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><ReactIcon /></span>
+            <span className="tech-name">React JS</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><JSIcon /></span>
+            <span className="tech-name">Javascript</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><HTML5 /></span>
+            <span className="tech-name">HTML5</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><HTML5 /></span>
+            <span className="tech-name">HTML5</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><ReactIcon /></span>
+            <span className="tech-name">React JS</span>
+            <span className="tech-score">87%</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><JSIcon /></span>
+            <span className="tech-name">Javascript</span>
+            <span className="tech-score">87%</span>
           </div>
         </div>
       </div>
