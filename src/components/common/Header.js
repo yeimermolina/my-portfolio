@@ -6,7 +6,8 @@ import classNames from 'classnames';
 const scrollConfig = {
   spy: true,
   smooth: true,
-  duration: 1000
+  duration: 1000,
+  offset: -60
 }
 
 const Header = ({ scrolled}) => {
@@ -20,9 +21,9 @@ const Header = ({ scrolled}) => {
       <nav className="navbar">
         <ul className="nav-inner">
           <li className="nav-item"><Link to="about" {...scrollConfig}>About</Link></li>
-          <li className="nav-item"><Link to="#about2">Portfolio</Link></li>
-          <li className="nav-item"><Link to="#about3">Contact</Link></li>
-          <li className="nav-item"><Link to="#about4">More</Link></li>
+          <li className="nav-item"><Link to="portfolio" {...scrollConfig}>Portfolio</Link></li>
+          <li className="nav-item"><Link to="courses" {...scrollConfig}>Courses</Link></li>
+          <li className="nav-item"><Link to="contact" {...scrollConfig}>Contact</Link></li>
         </ul>
       </nav>
     </header>

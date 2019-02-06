@@ -9,9 +9,19 @@
   font-weight: 400;
 }
 
+.bold {
+  font-weight: 600;
+  color: $dark-blue;
+}
+
 .highlight {
   color: $yellow;
   font-weight: 600;
+
+  &.pink {
+    color: $pink;
+    font-weight: 200;
+  }
 }
 
 .SectionTitle {
@@ -24,16 +34,16 @@
   margin: 5rem auto 4rem;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    height: 4px;
-    left: 50%;
-    right: 0;
-    transform: translateX(-50%);
-    background: white;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -20px;
+  //   height: 4px;
+  //   left: 50%;
+  //   right: 0;
+  //   transform: translateX(-50%);
+  //   background: white;
+  // }
 }
 
 .Hero {
@@ -96,7 +106,24 @@
       max-height: 300px;
       margin: 0;
       border-radius: 50%;
-      border: 5px solid $pink;
+      border: 5px solid white;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+
+      a:not(:last-of-type) {
+        margin-right: 1.5rem;
+
+        &:hover svg {
+          fill: $yellow;
+        }
+      }
+
+      a:hover svg path {
+        fill: $yellow ;
+      }
     }
   }
   
@@ -122,6 +149,7 @@
       overflow: hidden;
       .tech-name {
         margin-top: 3rem;
+        transition: all .3s;
       }
 
       .tech-icon {
@@ -158,3 +186,176 @@
     }
   }
 }
+
+#portfolio {
+  // height: 700px;
+  background-color: #f5f5f5;
+  padding: 0 0 4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  .SectionTitle {
+    color: $dark-blue;
+
+    &::before {
+      background: $dark-blue;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 300px);
+    justify-content: center;
+  }
+
+  .item {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background: #f5f5f5;
+      transition: all 0.7s;
+      z-index: 10;
+    }
+
+    .Button {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 30%);
+      bottom: -100%;
+      transition: all .7s;
+      z-index: 11;
+
+      .arrow {
+        display: none;
+      }
+    }
+
+    .project-name {
+      z-index: 11;
+      color: red;
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%,-30%);
+      transition: all .7s;
+      text-align: center;
+    }
+
+    &:hover{
+      &::before {
+        opacity: 1;
+      }
+
+      .Button {
+        transition: all .7s;
+        bottom: 30%;
+      }
+
+      .project-name {
+        top: 30%;
+        transition: all .7s;
+        // transform: translate(-50%,-50%);
+      }
+
+      img {
+        transform: scale(1.1) rotate(0.01deg);
+      }
+    }
+
+    
+  }
+
+  .item img {
+    max-width: 100%;
+    margin: 0;
+    transition: transform 0.7s;
+  }
+}
+
+#courses {
+  // height: 700px;
+  background-color: #01e1ff;
+  padding: 0 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .SectionTitle {
+    color: $dark-blue;
+
+    &::before {
+      background: $dark-blue;
+    }
+  }
+}
+
+#contact {
+  height: 700px;
+  background-color: #252934;
+  padding: 0 0 4rem;
+  display: flex;
+  // flex-direction: column;
+
+
+  .SectionTitle {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+.courses-slider-container {
+  max-width: 1200px;
+  height: 300px;
+  // margin: 0 auto;
+}
+
+.slick-slider {
+  height: 300px;
+}
+
+.prueba {
+  background: lightblue;
+  height: 280px;
+  width: 280px;
+  text-align: center;
+  align-self: center;
+  margin-top: 10px;
+  // padding: 25px 0;
+  transition: all .4s;
+  opacity: 0.6;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slick-center  .prueba {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  // padding: 8rem 10rem;
+  background: brown;
+  z-index: 999;
+  // margin: 1rem;
+  height: 300px;
+  width: 300px;
+  opacity: 1;
+}
+
+// .center {
+//   padding: 5em;
+// }
+
