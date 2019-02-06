@@ -14,7 +14,7 @@ import ReduxIcon from '../components/icons/redux-icon'
 import Github from '../components/icons/github'
 import Linkedin from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
-import Twitter from '../components/icons/Twitter'
+import Twitter from '../components/icons/twitter'
 
 
 
