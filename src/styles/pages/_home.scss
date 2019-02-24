@@ -31,7 +31,7 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
-  margin: 4rem auto 4rem;
+  margin: 6rem auto 4rem;
   position: relative;
 }
 
@@ -120,7 +120,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 4rem;
+  padding: 0 0 6rem;
 
   .SectionTitle {
     color: black;
@@ -241,10 +241,19 @@
 
 #portfolio {
   background-color: white;
-  padding: 0 0 4rem;
+  padding: 0 0 6rem;
 
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-bottom: 100vh solid $green;
+    border-right: 100vw solid transparent;
+    bottom: 0;
+  }
 
   .SectionTitle {
     color: black;
@@ -259,6 +268,7 @@
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(3, 248px);
     justify-content: center;
+    grid-gap: 10px;
   }
 
   .item {
@@ -313,8 +323,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0;
-      background: white;
+      opacity: 1;
+      background: rgba(0, 0, 0, .4);
       transition: all 0.7s;
       z-index: 10;
     }
@@ -355,6 +365,7 @@
     &:hover{
       &::before {
         opacity: 1;
+        background: white;
       }
 
       .Button {
@@ -401,8 +412,8 @@
 
 #contact {
   // height: 700px;
-  background-color: black;
-  padding: 0 0 4rem;
+  background-color: white;
+  padding: 0 0 6rem;
   display: flex;
   flex-direction: column;
  
@@ -415,7 +426,7 @@
   }
 
   .SectionTitle {
-    color: white;
+    color: black;
 
     &::before {
       background: white;
@@ -425,10 +436,9 @@
 
 
 #skills {
- 
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 2rem 4rem;
+  padding: 0 2rem 6rem;
 
   .inner {
     display: flex;

@@ -33,7 +33,7 @@ class IndexPage extends Component {
   render () {
     return (
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Home" keywords={[`Yeimer Molina`, `Software Developer`, `Frontend Developer`]} />
         <div className="Hero">
          
           <div className="Hero-inner" style={{ textAlign: "center" }}>
