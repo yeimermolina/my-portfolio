@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600');
-
-$gray: red;
 @import 'global';
 @import 'colors';
 
@@ -9,4 +7,12 @@ $gray: red;
 @import './common/button';
 
 @import './pages/home';
+// @import "node_modules/compass-sass-mixins/lib/compass";
+
+body {
+    background: #1B242F;
+}
+
+
+
 

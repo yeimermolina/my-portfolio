@@ -11,7 +11,7 @@ class Layout extends Component {
   }
 
   handleScroll = () => {
-    const offset = 500
+    const offset = 10;
     if (window.scrollY > offset ) {
       this.setState({ scrolled: true })
     } else {

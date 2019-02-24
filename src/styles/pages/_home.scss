@@ -11,16 +11,16 @@
 
 .bold {
   font-weight: 600;
-  color: $dark-blue;
+  color: black;
 }
 
 .highlight {
-  color: $yellow;
+  color: $green;
   font-weight: 600;
 
   &.pink {
-    color: $pink;
-    font-weight: 200;
+    color: $green;
+    font-weight: 300;
   }
 }
 
@@ -51,16 +51,70 @@
   height: 100vh;
   background-color: $dark-blue;
   position: relative;
+  background-image: url("../../src/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  img {
+    // position: absolute;
+    // left: 50%;
+    // top: 30%;
+    // transform: translate(-50%, -30%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+
+
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   border-bottom: 100vh solid #35356c;
+  //   border-left: 100vw solid transparent;
+  //   bottom: 0;
+  // }
 }
 
 .Hero-inner {
   position: absolute;
-  left: 50%;
+  
   top: 50%;
-  transform: translate(-50%, -50%);
-
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
   .text {
-    font-size: 3rem;
+    font-size: 2.4rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    margin: 2rem auto 0;
+    a:not(:last-of-type) {
+      margin-right: 1.5rem;
+
+      &:hover svg {
+        fill: $pink;
+      }
+    }
+
+    a:hover svg path {
+      fill: $pink ;
+    }
   }
 }
 
@@ -76,11 +130,26 @@
 }
 
 #about {
-  background-color: #35356c;
+  // background-color: #35356c;
+  background-color: #9ae8d4;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 0 4rem;
+
+  .SectionTitle {
+    color: black;
+
+  }
+
+  .about-text {
+    max-width: 600px;
+    text-align: center;
+    margin: 0;
+    color: black;
+  }
+
   .inner {
     max-width: 1300px;
     display: flex;
@@ -189,14 +258,14 @@
 
 #portfolio {
   // height: 700px;
-  background-color: #f5f5f5;
+  background-color: white;
   padding: 0 0 4rem;
 
   display: flex;
   flex-direction: column;
 
   .SectionTitle {
-    color: $dark-blue;
+    color: black;
 
     &::before {
       background: $dark-blue;
@@ -206,13 +275,53 @@
   .container {
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 248px);
     justify-content: center;
   }
 
   .item {
     overflow: hidden;
     position: relative;
+    .img {
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: all .3s;
+
+      &.pepper {
+        background-image: url("../../src/images/pepper.png");
+      }
+
+      &.parrospace {
+        background-image: url("../../src/images/parrospace.png");
+      }
+
+      &.myopain {
+        background-image: url("../../src/images/myopain.png");
+      }
+
+      &.bootcampmap {
+        background-image: url("../../src/images/bootcampmap.png");
+      }
+
+      &.divbuilder {
+        background-image: url("../../src/images/divbuilder.png");
+      }
+
+      &.burgerbuilder {
+        background-image: url("../../src/images/burgerbuilder.png");
+      }
+
+      &.platzivideo {
+        background-image: url("../../src/images/platzivideo.png");
+      }
+
+      &.rn-jobs {
+        background-image: url("../../src/images/rn.png");
+      }
+    }
 
     &::before {
       content: "";
@@ -222,7 +331,7 @@
       left: 0;
       right: 0;
       opacity: 0;
-      background: #f5f5f5;
+      background: white;
       transition: all 0.7s;
       z-index: 10;
     }
@@ -246,9 +355,18 @@
       position: absolute;
       top: -100%;
       left: 50%;
+      width: 80%;
       transform: translate(-50%,-30%);
       transition: all .7s;
       text-align: center;
+
+      .bold {
+        color: #0ec595;
+      }
+
+      .highlight {
+        color: black;
+      }
     }
 
     &:hover{
@@ -258,16 +376,15 @@
 
       .Button {
         transition: all .7s;
-        bottom: 30%;
+        bottom: 10%;
       }
 
       .project-name {
         top: 30%;
         transition: all .7s;
-        // transform: translate(-50%,-50%);
       }
 
-      img {
+      .img {
         transform: scale(1.1) rotate(0.01deg);
       }
     }

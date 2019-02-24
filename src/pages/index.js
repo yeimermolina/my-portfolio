@@ -2,9 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Avatar from '../images/prueba2.jpg'
-import Image1 from '../images/imagen1.jpg'
-import Image2 from '../images/imagen2.jpg'
-import Image3 from '../images/imagen3.jpg'
 import SEO from '../components/seo'
 import { Button, Carousel } from '../components/common'
 import ReactIcon from '../components/icons/react-icon'
@@ -18,35 +15,34 @@ import Twitter from '../components/icons/twitter'
 
 
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="Hero">
+     
       <div className="Hero-inner" style={{ textAlign: "center" }}>
+        <img src={Avatar} alt="avatar"/>
         <h1 className="text title">
-          Hi, I am <span className="highlight">Yeimer Molina</span>
+          <span className="highlight">Yeimer Molina</span>
         </h1>
-        <span className="text">I'm a Software Developer</span>
-        <Button classes="view-more">
-          View More
-        </Button>
+        <span className="text">Software Developer</span>
+        <div className="social-icons">
+          <a href="https://github.com/yeimermolina" target="_blank"><Github /></a>
+          <a href="https://www.linkedin.com/in/yeimermolina/" target="_blank"><Linkedin /></a>
+          <a href="https://www.instagram.com/yeimergabriel/"><Instagram /></a>
+          <a href="https://twitter.com/yeimergabriel"><Twitter /></a>
+        </div>
       </div>
-      {/* <img className="Avatar" src={Avatar} alt='avatar'/> */}
     </div>
     <section id="about" name="about">
       <div className="SectionTitle">About</div>
+      <p className="text about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+    </section>
+
+    {/* <section id="about" name="about">
+      <div className="SectionTitle">About</div>
       <div className="inner">
-        <div className="left-content">
-          <img src={Avatar} alt="avatar"/>
-          <p className="text">I am Software Developer from Venezuela, but I am currently living in Colombia. I like learning about new technologies</p>
-          <div className="social-icons">
-            <a href="https://github.com/yeimermolina" target="_blank"><Github /></a>
-            <a href="https://www.linkedin.com/in/yeimermolina/" target="_blank"><Linkedin /></a>
-            <a href="https://www.instagram.com/yeimergabriel/"><Instagram /></a>
-            <a href="https://twitter.com/yeimergabriel"><Twitter /></a>
-          </div>
-        </div>
-        
         <div className="right-content">
           <div className="tech-item">
             <span className="tech-icon"><ReactIcon /></span>
@@ -110,64 +106,68 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <section name="portfolio" id="portfolio">
       <div className="SectionTitle">Portfolio</div>
       <div className="container">
         <div className="item level1">
-          <img src={Image1}/>
-          <div className="text project-name">
-            <div className="bold">Myopain Seminars</div>
-            <span className="highlight pink">ReactJS</span>
-          </div>
-          <Button classes="view-project">
-            View More
-          </Button>
-        </div>
-        <div className="item level2">
-          <img src={Image2}/>
-          <div className="text project-name">
-            <div className="bold">Bootcampmap</div>
-            <span className="highlight pink">ReactJS</span>
-          </div>
-          <Button classes="view-project">
-            View More
-          </Button>
-        </div>
-        <div className="item level3">
-          <img src={Image3}/>
+          <div className="img pepper"></div>
           <div className="text project-name">
             <div className="bold">Pepper</div>
-            <span className="highlight pink">Bigcommerce</span>
+            <span className="highlight pink">
+              E-commerce site built with Stencil Bigcommerce.
+            </span>
           </div>
-          <Button classes="view-project">
-            View More
+          <Button classes="view-project" url="http://moon-llc.mybigcommerce.com/">
+            View Website
           </Button>
         </div>
-        <div className="item level1">
-          <img src={Image1}/>
+        <div className="item level2">
+        <div className="img parrospace"></div>
           <div className="text project-name">
             <div className="bold">Parrospace</div>
-            <span className="highlight pink">ReactJS</span>
-          </div>
-          <Button classes="view-project">
-            View More
-          </Button>
-        </div>
-        <div className="item level2">
-          <img src={Image2}/>
-          <div className="text project-name">
-            <div className="bold">Parrolabs</div>
-            <span className="highlight pink">ReactJS</span>
+            <span className="highlight pink">
+              Static Website built with GatsbyJs
+            </span>
           </div>
           <Button classes="view-project">
             View More
           </Button>
         </div>
         <div className="item level3">
-          <img src={Image3}/>
+          <div className="img myopain"></div>
           <div className="text project-name">
-            <div className="bold">World Bible School</div>
+            <div className="bold">Myopain Seminars</div>
+            <span className="highlight pink">Wep application for Dry Needling Courses, Built in ReactJS</span>
+          </div>
+          <Button classes="view-project">
+            View More
+          </Button>
+        </div>
+        <div className="item level1">
+          <div className="img bootcampmap"></div>
+          <div className="text project-name">
+            <div className="bold">Bootcampmap</div>
+            <span className="highlight pink">Wep application that help people find tech bootcamps around the world, Built in ReactJS, it is still under construction</span>
+          </div>
+          <Button classes="view-project">
+            View More
+          </Button>
+        </div>
+        <div className="item level2">
+          <div className="img divbuilder"></div>
+          <div className="text project-name">
+            <div className="bold">Div Builder</div>
+            <span className="highlight pink">Personal test project built with ReactJS</span>
+          </div>
+          <Button classes="view-project">
+            View More
+          </Button>
+        </div>
+        <div className="item level3">
+          <div className="img burgerbuilder"></div>
+          <div className="text project-name">
+            <div className="bold">Burger Builder</div>
             <span className="highlight pink">ReactJS</span>
           </div>
           <Button classes="view-project">
@@ -175,19 +175,9 @@ const IndexPage = () => (
           </Button>
         </div>
         <div className="item level1">
-          <img src={Image1}/>
+          <div className="img platzivideo"></div>
           <div className="text project-name">
-            <div className="bold">World Bible School</div>
-            <span className="highlight pink">ReactJS</span>
-          </div>
-          <Button classes="view-project">
-            View More
-          </Button>
-        </div>
-        <div className="item level2">
-          <img src={Image2}/>
-          <div className="text project-name">
-            <div className="bold">World Bible School</div>
+            <div className="bold">Platzivideo</div>
             <span className="highlight pink">ReactJS</span>
           </div>
           <Button classes="view-project">
@@ -195,10 +185,10 @@ const IndexPage = () => (
           </Button>
         </div>
         <div className="item level3">
-          <img src={Image3}/>
+          <div className="img rn-jobs"></div>
           <div className="text project-name">
-            <div className="bold">World Bible School</div>
-            <span className="highlight pink">ReactJS</span>
+            <div className="bold">Jobs Finder</div>
+            <span className="highlight pink">Personal test application built with React Native</span>
           </div>
           <Button classes="view-project">
             View More
