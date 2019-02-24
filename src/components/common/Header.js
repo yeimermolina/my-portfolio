@@ -23,7 +23,7 @@ const Header = ({ scrolled}) => {
           <li className="nav-item"><Link to="about" {...scrollConfig}>About</Link></li>
           <li className="nav-item"><Link to="skills" {...scrollConfig}>Skills</Link></li>
           <li className="nav-item"><Link to="portfolio" {...scrollConfig}>Portfolio</Link></li>
-          <li className="nav-item"><Link to="contact" {...scrollConfig}>Contact</Link></li>
+          {/* <li className="nav-item"><Link to="contact" {...scrollConfig}>Contact</Link></li> */}
         </ul>
       </nav>
     </header>

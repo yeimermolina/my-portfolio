@@ -522,6 +522,12 @@
     .tech-name {
       margin-top: 3rem;
       transition: all .3s;
+      font-size: 0.8rem;
+      text-align: center;
+
+      @include breakpoint('medium') {
+        font-size: 1rem;
+      }
     }
 
     .tech-icon {
@@ -548,6 +554,10 @@
       left: 200%;
       transform: translateX(-50%);
       transition: all .3s;
+      font-size: 0.8rem;
+      @include breakpoint('medium') {
+        font-size: 1rem;
+      }
     }
 
     &:hover .tech-icon {

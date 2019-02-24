@@ -7,7 +7,6 @@ import { Button, Input, TextArea, SubmitButton } from '../components/common'
 import ReactIcon from '../components/icons/react-icon'
 import JSIcon from '../components/icons/js-icon'
 import HTML5 from '../components/icons/html5-icon'
-import ReduxIcon from '../components/icons/redux-icon'
 import Css3 from '../components/icons/css3'
 import Python from '../components/icons/python'
 import Vue from '../components/icons/vue'
@@ -20,6 +19,7 @@ import Github from '../components/icons/github'
 import Linkedin from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
 import Twitter from '../components/icons/twitter'
+import Resume from '../components/icons/resume'
 
 class IndexPage extends Component {
   state = {
@@ -51,10 +51,11 @@ class IndexPage extends Component {
             </h1>
             <span className="text">Software Developer</span>
             <div className="social-icons">
-              <a href="https://github.com/yeimermolina" target="_blank"><Github /></a>
-              <a href="https://www.linkedin.com/in/yeimermolina/" target="_blank"><Linkedin /></a>
-              <a href="https://www.instagram.com/yeimergabriel/"><Instagram /></a>
-              <a href="https://twitter.com/yeimergabriel"><Twitter /></a>
+              <a href="https://github.com/yeimermolina" target="_blank" rel="noopener noreferrer"><Github /></a>
+              <a href="https://www.linkedin.com/in/yeimermolina/" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
+              <a href="https://www.instagram.com/yeimergabriel/" target="_blank" rel="noopener noreferrer"><Instagram /></a>
+              <a href="https://twitter.com/yeimergabriel" target="_blank"  rel="noopener noreferrer"><Twitter /></a>
+              <a href="https://drive.google.com/file/d/1KbcXQdohsKPIA48sLbjUZiSfTLIkSiIo/view?usp=sharing" target="_blank"  rel="noopener noreferrer"><Resume /></a>
             </div>
           </div>
         </div>
@@ -83,7 +84,7 @@ class IndexPage extends Component {
           <div className="tech-item">
             <span className="tech-icon"><JSIcon /></span>
             <span className="tech-name">Javascript</span>
-            <span className="tech-score">87%</span>
+            <span className="tech-score">Advanced</span>
           </div>
           <div className="tech-item">
             <span className="tech-icon"><Css3 /></span>
@@ -189,7 +190,7 @@ class IndexPage extends Component {
               <div className="img burgerbuilder"></div>
               <div className="text project-name">
                 <div className="bold">Burger Builder</div>
-                <span className="highlight pink">ReactJS</span>
+                <span className="highlight pink">Personal test project built with ReactJS</span>
               </div>
               <Button classes="view-project" url="https://github.com/yeimermolina/reactburger">
                 More
@@ -199,7 +200,7 @@ class IndexPage extends Component {
               <div className="img platzivideo"></div>
               <div className="text project-name">
                 <div className="bold">Platzivideo</div>
-                <span className="highlight pink">ReactJS</span>
+                <span className="highlight pink">Video Player built with ReactJS</span>
               </div>
               <Button classes="view-project" url="https://github.com/yeimermolina/reactVideoPlayer">
                 More
@@ -227,7 +228,7 @@ class IndexPage extends Component {
             </div>
           </div>
         </section>
-        <section name="contact" id="contact">
+        {/* <section name="contact" id="contact">
           <div className="SectionTitle">Contact</div>
           <div className="inner">
             <Input 
@@ -249,7 +250,7 @@ class IndexPage extends Component {
               SEND
             </SubmitButton>
           </div>
-        </section>
+        </section> */}
       </Layout>
     )
   }
