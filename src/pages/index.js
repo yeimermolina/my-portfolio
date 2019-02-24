@@ -8,6 +8,14 @@ import ReactIcon from '../components/icons/react-icon'
 import JSIcon from '../components/icons/js-icon'
 import HTML5 from '../components/icons/html5-icon'
 import ReduxIcon from '../components/icons/redux-icon'
+import Css3 from '../components/icons/css3'
+import Python from '../components/icons/python'
+import Vue from '../components/icons/vue'
+import Django from '../components/icons/django'
+import Mongo from '../components/icons/mongo'
+import Git from '../components/icons/git'
+import Angular from '../components/icons/angular'
+import Postgres from '../components/icons/postgresql'
 import Github from '../components/icons/github'
 import Linkedin from '../components/icons/linkedin'
 import Instagram from '../components/icons/instagram'
@@ -51,8 +59,8 @@ class IndexPage extends Component {
           </div>
         </div>
         <section id="about" name="about">
-          <div className="SectionTitle">About</div>
-          <p className="text about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <div className="SectionTitle">About Me</div>
+          <p className="text about-text">I am Software Developer from Venezuela, but I am currently living in Medellín, Colombia. I have 3 years of Professional Experience, and during the last year I've been focus mainly on front-end technologies, being ReactJS one of favorites. </p>
         </section>
         <section id="skills" name="skills">
           <div className="SectionTitle">Skills</div>
@@ -63,9 +71,9 @@ class IndexPage extends Component {
             <span className="tech-score">Advanced</span>
           </div>
           <div className="tech-item">
-            <span className="tech-icon"><ReduxIcon /></span>
-            <span className="tech-name">Redux</span>
-            <span className="tech-score">Advanced</span>
+            <span className="tech-icon"><Angular /></span>
+            <span className="tech-name">Angular</span>
+            <span className="tech-score">Basic</span>
           </div>
           <div className="tech-item">
             <span className="tech-icon"><HTML5 /></span>
@@ -73,49 +81,49 @@ class IndexPage extends Component {
             <span className="tech-score">Advanced</span>
           </div>
           <div className="tech-item">
-            <span className="tech-icon"><ReactIcon /></span>
-            <span className="tech-name">React JS</span>
-            <span className="tech-score">87%</span>
-          </div>
-          <div className="tech-item">
             <span className="tech-icon"><JSIcon /></span>
             <span className="tech-name">Javascript</span>
             <span className="tech-score">87%</span>
           </div>
           <div className="tech-item">
-            <span className="tech-icon"><HTML5 /></span>
-            <span className="tech-name">HTML5</span>
-            <span className="tech-score">87%</span>
+            <span className="tech-icon"><Css3 /></span>
+            <span className="tech-name">Css3</span>
+            <span className="tech-score">Advanced</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><Python /></span>
+            <span className="tech-name">Python</span>
+            <span className="tech-score">Intermediate</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><Vue /></span>
+            <span className="tech-name">VueJS</span>
+            <span className="tech-score">Basic</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><Django /></span>
+            <span className="tech-name">Django</span>
+            <span className="tech-score">Intermediate</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><Mongo /></span>
+            <span className="tech-name">MongoDB</span>
+            <span className="tech-score">Intermediate</span>
+          </div>
+          <div className="tech-item">
+            <span className="tech-icon"><Postgres /></span>
+            <span className="tech-name">PostgreSQL</span>
+            <span className="tech-score">Basic</span>
           </div>
           <div className="tech-item">
             <span className="tech-icon"><ReactIcon /></span>
-            <span className="tech-name">React JS</span>
-            <span className="tech-score">87%</span>
+            <span className="tech-name">React Native</span>
+            <span className="tech-score">Basic</span>
           </div>
           <div className="tech-item">
-            <span className="tech-icon"><JSIcon /></span>
-            <span className="tech-name">Javascript</span>
-            <span className="tech-score">87%</span>
-          </div>
-          <div className="tech-item">
-            <span className="tech-icon"><HTML5 /></span>
-            <span className="tech-name">HTML5</span>
-            <span className="tech-score">87%</span>
-          </div>
-          <div className="tech-item">
-            <span className="tech-icon"><HTML5 /></span>
-            <span className="tech-name">HTML5</span>
-            <span className="tech-score">87%</span>
-          </div>
-          <div className="tech-item">
-            <span className="tech-icon"><ReactIcon /></span>
-            <span className="tech-name">React JS</span>
-            <span className="tech-score">87%</span>
-          </div>
-          <div className="tech-item">
-            <span className="tech-icon"><JSIcon /></span>
-            <span className="tech-name">Javascript</span>
-            <span className="tech-score">87%</span>
+            <span className="tech-icon"><Git /></span>
+            <span className="tech-name">Git</span>
+            <span className="tech-score">Intermediate</span>
           </div>
           </div>
         </section>
@@ -132,7 +140,7 @@ class IndexPage extends Component {
                 </span>
               </div>
               <Button classes="view-project" url="http://moon-llc.mybigcommerce.com/">
-                View Website
+                View
               </Button>
             </div>
             <div className="item level2">
@@ -143,8 +151,8 @@ class IndexPage extends Component {
                   Static Website built with GatsbyJs
                 </span>
               </div>
-              <Button classes="view-project">
-                View More
+              <Button classes="view-project" url="https://www.parrospace.com/">
+                View
               </Button>
             </div>
             <div className="item level3">
@@ -153,8 +161,8 @@ class IndexPage extends Component {
                 <div className="bold">Myopain Seminars</div>
                 <span className="highlight pink">Wep application for Dry Needling Courses, Built in ReactJS</span>
               </div>
-              <Button classes="view-project">
-                View More
+              <Button classes="view-project" url="https://www.myopainseminars.com/">
+                More
               </Button>
             </div>
             <div className="item level1">
@@ -163,8 +171,8 @@ class IndexPage extends Component {
                 <div className="bold">Bootcampmap</div>
                 <span className="highlight pink">Wep application that help people find tech bootcamps around the world, Built in ReactJS, it is still under construction</span>
               </div>
-              <Button classes="view-project">
-                View More
+              <Button classes="view-project" url="https://www.bootcampmap.com/">
+                More
               </Button>
             </div>
             <div className="item level2">
@@ -173,7 +181,7 @@ class IndexPage extends Component {
                 <div className="bold">Div Builder</div>
                 <span className="highlight pink">Personal test project built with ReactJS</span>
               </div>
-              <Button classes="view-project">
+              <Button classes="view-project" url="https://afternoon-garden-48530.herokuapp.com/">
                 View More
               </Button>
             </div>
@@ -183,8 +191,8 @@ class IndexPage extends Component {
                 <div className="bold">Burger Builder</div>
                 <span className="highlight pink">ReactJS</span>
               </div>
-              <Button classes="view-project">
-                View More
+              <Button classes="view-project" url="https://github.com/yeimermolina/reactburger">
+                More
               </Button>
             </div>
             <div className="item level1">
@@ -193,8 +201,8 @@ class IndexPage extends Component {
                 <div className="bold">Platzivideo</div>
                 <span className="highlight pink">ReactJS</span>
               </div>
-              <Button classes="view-project">
-                View More
+              <Button classes="view-project" url="https://github.com/yeimermolina/reactVideoPlayer">
+                More
               </Button>
             </div>
             <div className="item level3">
@@ -203,7 +211,17 @@ class IndexPage extends Component {
                 <div className="bold">Jobs Finder</div>
                 <span className="highlight pink">Personal test application built with React Native</span>
               </div>
-              <Button classes="view-project">
+              <Button classes="view-project" url="https://github.com/yeimermolina/RN-jobs-finder">
+                View More
+              </Button>
+            </div>
+            <div className="item level3">
+              <div className="img rn-jobs"></div>
+              <div className="text project-name">
+                <div className="bold">Swap</div>
+                <span className="highlight pink">Personal application to test advanced animations in React Native</span>
+              </div>
+              <Button classes="view-project" url="https://github.com/yeimermolina/rn-swap-project">
                 View More
               </Button>
             </div>
